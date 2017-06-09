@@ -45,5 +45,5 @@ if (!$result) {
 	echo json_encode(['short_url' => 'failed' , 'error' => 5, 'msg' => 'set data failed']);
 	exit();
 }
-echo json_encode(['short_url' => $_SERVER['SERVER_NAME'] . '/' .$short , 'error' => 0, 'msg' => 'success']);
+echo json_encode(['short_url' => $_SERVER['HTTP_HOST'] . '/' .$short , 'error' => 0, 'msg' => 'success']);
 exit();
