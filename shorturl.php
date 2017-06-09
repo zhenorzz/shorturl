@@ -22,7 +22,7 @@ if (!$link) {
 	echo json_encode(['short_url' => 'failed' , 'error' => 1, 'msg' => 'redis connected failed']);
 	exit();
 }
-$result = $redis->auth('UclBrtHongWei1qaz!QAZ');
+$result = $redis->auth('UclbrtHongWei1qaz!QAZ');
 if (!$result) {
 	echo json_encode(['short_url' => 'failed' , 'error' => 2, 'msg' => 'redis auth failed']);
 	exit();
